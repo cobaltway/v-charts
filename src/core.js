@@ -44,7 +44,14 @@ export default {
     visualMap: { type: [Object, Array] },
     dataZoom: { type: [Object, Array] },
     toolbox: { type: Object },
-    initOptions: { type: Object, default () { return {} } },
+    initOptions: {
+      type: Object,
+      default () {
+        return {
+          renderer: 'svg'
+        }
+      }
+    },
     title: Object,
     legend: Object,
     xAxis: Object,
